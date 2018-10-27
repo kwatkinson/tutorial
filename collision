@@ -1,0 +1,14 @@
+
+  void collision(Golfball ball) {
+    
+    
+  //check left and right
+    if(ball.xPos + ball.size/2 > xPos - blockWidth && ball.xPos - ball.size/2 < xPos + blockWidth && ball.yPos < yPos + blockWidth && ball.yPos > yPos - blockWidth){
+     ball.xSpeed *= -1; 
+    }
+    //check up and down
+        if(ball.yPos + ball.size/2 > yPos - blockWidth && ball.yPos - ball.size/2 < yPos + blockWidth && ball.xPos < xPos + blockWidth && ball.xPos > xPos - blockWidth){
+     ball.ySpeed *= -1; 
+    }
+
+  }
